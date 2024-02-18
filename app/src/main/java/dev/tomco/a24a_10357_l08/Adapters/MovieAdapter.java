@@ -1,7 +1,6 @@
 package dev.tomco.a24a_10357_l08.Adapters;
 
 import android.content.Context;
-import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +13,6 @@ import com.google.android.material.imageview.ShapeableImageView;
 import com.google.android.material.textview.MaterialTextView;
 
 import java.util.ArrayList;
-import java.util.stream.Collectors;
 
 import dev.tomco.a24a_10357_l08.Interfaces.MovieCallback;
 import dev.tomco.a24a_10357_l08.Models.Movie;
@@ -41,7 +39,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
     @NonNull
     @Override
     public MovieViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.horisontal_movie_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.horizontal_movie_item, parent, false);
         return new MovieViewHolder(view);
     }
 
